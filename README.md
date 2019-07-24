@@ -128,53 +128,28 @@ The library cannot currently be used with hardware based on the ENC28J60 chip â€
 - Now select all required option and your widget will create.On which you can view your temp and humidity data.
  ![alt tag](https://github.com/mjScientech/Esp32-Ubidots-Wireless-long-range-Temperature-And-Humidity/blob/master/widget3.JPG)        
 # OUTPUT
-- **Now as the temperature/humidity  increases and decreases new data available inside the various variable.**
 ![alt tag](https://github.com/mjScientech/Esp32-Ubidots-Wireless-long-range-Temperature-And-Humidity/blob/master/widget4.JPG)
 
-# Creating events in ubidots:
+# Export your Ubidots data to Google Sheets
+In this we can extract the data stored in the Ubidots cloud for further analysis.The possibilities are enormous; for instance, you could create an automatic report generator and send it to your customers every week.
 
-1. Select Events (from the Data dropdown).
-![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event1.JPG)
-2. Now click on create Event.
-![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event2.JPG)
+Another application would be device provisioning; if you have thousands of devices to deploy, and their information is in a Google Sheet, you could create a script to read the sheet and create a Ubidots data source for every line on the file.
+**Steps to do this-**
+- Create a Google Sheet and add two sheets to it with these names:
 
-**Types of Events**
-Ubidots support already integrated events to allow you to send Events, Alerts, and Notifications to those who need to know, when they need to know. 
-Ubidots' prebuilt integrations include: 
+1. Variables
+2. Values
+- From your Google Sheet, click on "Tools" then "Script Editor...", then "Blank Project":
 
-- Email notifications
-- SMS notifications
-- Webhook events - [learn more](https://help.ubidots.com/user-guides/events-create-a-webhook)
-- Telegram notifications
-- Slack notifications - [learn more](https://help.ubidots.com/user-guides/events-slack-webhook-setup)
-- Voice Call notifications - [learn more](https://help.ubidots.com/user-guides/events-voice-call-notifications)
-- Back to Normal notification - [learn more](https://help.ubidots.com/user-guides/events-back-to-normal-events-and-notifications)
-- Geofence notifications - [learn more](https://help.ubidots.com/user-guides/creating-a-geofence-alert)
+- Open the Script Editor:
+[![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet1.png)
+- Add the code below (in the code section) to the script 
+[Script](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/script%20code.txt)
+- Done! now open your Google Sheet again and you'll see a new menu to trigger the functions:
+[![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet%202.png)
 
-3. Then choose a device and associating variable that indicates the devices' "values".
-[![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event3.JPG)
-
-4. Now selct a thresold value for your event to trigger and compare it to device values and also select time to trigger your event.
-
-5. Now, create  action type by clicking plus sign.
-[![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event4.JPG)
-
-6.  Establish and configure which actions are to be executed and the message to the receiver: Send SMS, Email, Webhooks, Telegrams,     Phone Calls, SLACK, and webhooks to those who need to know.
-[![alt tag](https://github.com/mjScientech/Creating-event-using-ubidots-and-Long-range-temperature-and-vibration-sensor/blob/master/event6.PNG)
-
-7. Now fill all the required fields .
-[![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event9.JPG)
-
-[![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event5.JPG)
-
-8. Determine the activity window the events may/may not be executed.
-[![alt tag](https://github.com/ncdcommunity/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event6.JPG)
-[![alt tag](https://github.com/ncdcommunity/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event7.JPG)
-
-9. Confirm your Events.
-
-# Output of event in your mail
-[![alt tag](https://github.com/mjScientech/Creating-Alert-Using-Ubidots-ESP32-Temperature-and-Humidity-Sensor/blob/master/event8.JPG)
+# Result
+[![alt tag](https://github.com/mjScientech/predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/googl1.PNG)
 
 
 
