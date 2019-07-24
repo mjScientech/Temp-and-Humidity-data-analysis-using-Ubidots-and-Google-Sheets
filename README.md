@@ -33,7 +33,7 @@ The library uses the Arduino Ethernet Client api for interacting with the underl
 - Arduino Ethernet
 - Arduino Ethernet Shield
 - Arduino YUN – use the included YunClient in place of EthernetClient, and be sure to do a Bridge.begin() first
-- Arduino WiFi Shield - if you want to send packets greater than 90 bytes with this shield, enable the [MQTT_MAX_TRANSFER_SIZE]  (https://pubsubclient.knolleary.net/api.html#configoptions) option in   PubSubClient.h.
+- Arduino WiFi Shield - if you want to send packets greater than 90 bytes with this shield, enable the [MQTT_MAX_TRANSFER_SIZE](https://pubsubclient.knolleary.net/api.html#configoptions) option in   PubSubClient.h.
 - Sparkfun WiFly Shield – when used with [this](https://github.com/dpslwk/WiFly) library
 - Intel Galileo/Edison
 - ESP8266
@@ -81,7 +81,7 @@ The library cannot currently be used with hardware based on the ENC28J60 chip �
 
 - Install [NI Visa Driver](http://www.ni.com/download/ni-visa-run-time-engine/6647/en/)
 
-- Install [LabVIEW Run-Time Engine]( http://www.ni.com/download/labview-run-time-engine-2017-sp1/7191/en/) and [NI-Serial Runtime]  (http://www.ni.com/download/ni-serial-17.0/6613/en/)
+- Install [LabVIEW Run-Time Engine]( http://www.ni.com/download/labview-run-time-engine-2017-sp1/7191/en/) and [NI-Serial Runtime](http://www.ni.com/download/ni-serial-17.0/6613/en/)
 
 - [Getting started guide for this product.](https://ncd.io/long-range-iot-wireless-vibration-sensor-getting-started/)
 
@@ -146,6 +146,7 @@ Another application would be device provisioning; if you have thousands of devic
 - Add the code below (in the code section) to the script 
 [Script](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/script%20code.txt)
 - Also add the Token Id ,device Id taken from your Ubidots account to the following code. 
+[![alt tag](https://github.com/mjScientech/Temp-and-Humidity-data-analysis-using-Ubidots-and-Google-Sheets/blob/master/Script%20editor.JPG)
 - Done! now open your Google Sheet again and you'll see a new menu to trigger the functions:
 [![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet%202.png)
 
