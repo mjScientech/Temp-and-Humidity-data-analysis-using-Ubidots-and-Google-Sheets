@@ -145,6 +145,7 @@ Another application would be device provisioning; if you have thousands of devic
 [![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet1.png)
 - Add the code below (in the code section) to the script 
 [Script](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/script%20code.txt)
+- Also add the Token Id ,device Id taken from your Ubidots account to the following code. 
 - Done! now open your Google Sheet again and you'll see a new menu to trigger the functions:
 [![alt tag](https://github.com/ncdcommunity/predective-machine-monitoring-system-using-ubidots/blob/master/googlesheet%202.png)
 
